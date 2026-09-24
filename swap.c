@@ -1,21 +1,27 @@
- 1 #include<stdio.h>
-  2 void swap(int*a,int*b)
-  3 {
-  4     int temp;
-  5     temp=*a;
-  6     *a=*b;
-  7     *b=temp;
-  8 }
-  9 int main()
- 10 {
- 11     int a,b;
- 12 printf("enter first number:");
- 13 scanf("%d",&a);
- 14 printf("enter second number:");
- 15 scanf("%d",&b);
- 16 printf("before swapping:a=%d,b=%d\n",a,b);
- 17 swap(&a,&b);
- 18 printf("after swapping:a=%d,b=%d\n",a,b);
- 19 return 0;
- 20 }
- 21
+#include<stdio.h>
+void swap(int*a,int*b)
+{
+   int temp;
+   temp=*a;
+   *a=*b;
+   *b=temp;
+}
+int main()
+{
+   int a,b;
+printf("enter first number:");
+scanf("%d",&a);
+printf("enter second number:");
+scanf("%d",&b);
+printf("before swapping:a=%d,b=%d\n",a,b);
+swap(&a,&b);
+printf("after swapping:a=%d,b=%d\n",a,b);
+return 0;
+}
+
+__OUTPUT__
+
+enter first number:22
+enter second number:33
+before swapping:a=22,b=33
+after swapping:a=33,b=22
